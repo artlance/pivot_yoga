@@ -3016,7 +3016,6 @@ button.button {
 
 /* header */
 .header-global {
-  /*position: fixed;*/
   position: absolute;
   left: 0;
   top: 0;
@@ -3189,8 +3188,7 @@ a.logo:hover {
 
 /* footer */
 .footer-global {
-  /*padding: 92px 0 42px;*/
-  padding: 40px 0 42px;
+  padding: 92px 0 42px;
   background: #20C2DA;
   color: #ffffff;
 }
@@ -3246,7 +3244,6 @@ a.logo:hover {
 }
 
 .footer-line {
-  /*margin: 48px 0 50px;*/
   margin: 0 0 50px;
   background: #ffffff;
   opacity: 0.12;
@@ -4906,7 +4903,7 @@ a.instagram-follow:before {
 }
 
 .animated {
-  webkit-animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
