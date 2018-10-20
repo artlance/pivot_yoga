@@ -1,0 +1,123 @@
+/* header */
+.header-global {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding-top: 50px;
+    padding-bottom: 23px;
+    transition: transform $d*2 $f, opacity $d*2 $f, background-color $d*2 $f;
+    transform: translate3d(0, 0, 0);
+    z-index: 9090;
+    &.from-top {
+        background: rgba(17, 8, 41, 0.9);
+        transform: translate3d(0, -25px, 0);
+    }
+    &.nav-up {
+        transform: translate3d(0, -101%, 0) !important;
+    }
+}
+a.logo {
+    display: block;
+    width: 200px;
+    transition: opacity $d $f;
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: $ft;
+    font-size: 16px;
+    & > li {
+        margin: 0 0 0 26px;
+        &.current-menu-parent {}
+        &.current-menu-item {}
+        &.menu-item-has-children {}
+        &:hover {
+            & > ul {
+                display: block;
+            }
+        }
+        & > a {
+            display: block;
+            color: $w;
+            transition: color $d $f, background-color $d $f, border-color $d $f, box-shadow $d $f, opacity $d $f;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        & > ul {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+        }
+    }
+    a.button {
+        font-size: 16px;
+        padding: 7px 28px !important;
+        margin-bottom: 3px;
+        margin-left: 11px;
+        &:hover {
+            opacity: 1 !important;
+        }
+    }
+}
+.navigation {}
+.navigation-toggle {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 5050;
+    &:focus {
+        box-shadow: 0 0 0 3px $focus;
+    }
+}
+.navigation-toggle-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    right: 12px;
+    height: 2px;
+    background: $black;
+    transform: translate3d(0, -50%, 0);
+    transition: background-color $d $f;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: $black;
+        transform: translate3d(0, -10px, 0);
+        transition: transform $d $f;
+    }
+    &:after {
+        transform: translate3d(0, 10px, 0);
+    }
+}
+.navigation-open {
+    .navigation-toggle-icon {
+        background-color: $tr;
+        &:after {
+            transform: rotate(-45deg);
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+    }
+}

@@ -1,0 +1,40 @@
+$footer: 1000px;
+
+
+$fontSize: 18px;
+$lineHeight: 1.5263;
+$spacer: 30px;                                                    $sp: $spacer;
+$fontFamily: 'Open Sans', Helvetica, Arial, sans-serif;           $ff: $fontFamily;
+$fontTitle: 'Montserrat', Times, Georgia, serif;                  $ft: $fontTitle;
+
+$duration: 0.15s;                                                 $d: $duration;
+$function: cubic-bezier(0.4, 0.0, 0.2, 1);                        $f: $function;
+$function-reverse: cubic-bezier(0.2, 0.0, 0.4, 1);                $fr: $function-reverse;
+
+
+$primary: #20C2DA;                                                $p: $primary;
+$secondary: #110829;                                              $s: $secondary;
+$tertiary: #000000;                                               $t: $tertiary;
+
+
+$text: #444444;                                                   $txt: $text;
+$link: #20C2DA;                                                   $l: $link;
+$link-hover: #41d9f0;                                             $lh: $link-hover;
+$focus: rgba(32, 194, 218, 0.15);                                  $fo: $focus;
+
+
+$white: #ffffff;                                                  $w: $white;
+$black: #000000;                                                  $b: $black;
+$dark-gray: #333333;                                              $dgr: $dark-gray;
+$gray: #727d86;                                                   $gr: $gray;
+$light-gray: #f2f4f4;                                             $lgr: $light-gray;
+$green: #00c100;                                                  $gn: $green;
+$red: #ef343b;                                                    $r: $red;
+$transparent: transparent;                                        $tr: $transparent;
+
+
+$default: #f00;
+$success: #00c100;
+$info: #0079e8;
+$warning: #f0ad4e;
+$error: #ef343b;

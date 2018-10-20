@@ -1,0 +1,303 @@
+/* responsive */
+@include media-breakpoint-down(xl) {
+}
+@include media-breakpoint-down(lg) {
+    //* { background: #f00; }
+}
+@include media-breakpoint-down(md) {
+    //* { background: #f0f; }
+    .how-it-works-content {
+        padding-left: 4%;
+    }
+    .container {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .tech-slide-content {
+        margin-top: -50px;
+    }
+    .note-text {
+        font-size: 18px;
+        min-height: 57px;
+    }
+}
+@include media-breakpoint-down(sm) {
+    //* { background: #f00; }
+    .visibility-hidden {
+        visibility: visible !important;
+        animation-name: none !important;
+    }
+    .teachers-hero {
+        display: none !important;
+    }
+    .down,
+    .rings,
+    .note,
+    .hero-video,
+    .tech-slide-background,
+    .tech-platform,
+    .tech-point,
+    .tech-navigation {
+        display: none !important;
+    }
+    .header-global {
+        top: 0 !important;
+        position: absolute !important;
+        background: $tr !important;
+        transform: translate3d(0, 0, 0) !important;
+        &.nav-up {
+            transform: translate3d(0, 0, 0) !important;
+        }
+    }
+    .how-it-works {
+        flex-wrap: wrap;
+    }
+    .how-it-works-content,
+    .how-it-works-photo {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .tech-slider {
+        position: relative !important;
+        left: 0 !important;
+        top: 0 !important;
+        bottom: auto !important;
+        padding-top: 0;
+    }
+    .tech-slide {
+        position: relative !important;
+        height: auto;
+        opacity: 1 !important;
+    }
+    .tech-slide-content {
+        position: relative;
+        left: 0;
+        width: auto;
+        margin-top: 0;
+        transform: translate3d(0, 0, 0);
+    }
+    .tech-wrapper {
+        padding-top: 0 !important;
+    }
+    .tech-slide-content {
+        max-width: none;
+        text-align: center;
+        padding-bottom: 20px;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-bottom: 44px;
+        }
+        h3 {
+            font-size: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 4%;
+            padding-right: 4%;
+            margin-bottom: 14px;
+        }
+        p {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            padding-left: 4%;
+            padding-right: 4%;
+            max-width: 380px;
+        }
+        a.button {
+            display: none;
+        }
+    }
+    .get-started-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 320px;
+        padding: 88px 0 93px;
+        p {
+            margin-bottom: 40px;
+        }
+    }
+    .get-started-photo {
+        margin-left: 0;
+        max-width: none;
+        margin-left: -29%;
+        margin-right: -20%;
+    }
+    a.logo {
+        margin: 0 auto;
+        max-width: 182px;
+    }
+    .hero {
+        text-align: center;
+        .row {
+            height: auto;
+            // min-height: 100vh;
+            padding-top: 170px;
+            padding-bottom: 160px;
+        }
+    }
+    .hero-note {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-gradient {
+        height: 100%;
+        background: linear-gradient(180deg, rgba(17,8,41,0.33) 0%, $s 100%);
+    }
+    .teachers-title {
+        padding-top: 15px;
+        padding-bottom: 48px;
+    }
+    .teachers-slide-name {
+        font-size: 25px;
+        letter-spacing: 0.6px;
+    }
+    .teachers-slide-category {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+    .teachers-slider-wrapper {
+        padding-bottom: 41px;
+    }
+    .how-it-works {
+        padding-top: 69px;
+        text-align: center;
+    }
+    .how-it-works-wrap {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .how-it-works-content {
+        padding-right: 4%;
+        padding-bottom: 68px;
+        p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .tech {
+        padding-top: 58px;
+        padding-bottom: 70px;
+    }
+    .reviews {
+        padding-top: 70px;
+        padding-bottom: 130px;
+    }
+    .review-quote {
+        margin-bottom: 24px;
+    }
+    .get-started {
+        text-align: center;
+        h3 {
+            &:after {
+                left: 50%;
+                margin-left: -32px;
+            }
+        }
+    }
+    .get-notified {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+    .get-notified-title {
+        margin-bottom: 14px;
+    }
+    .get-notified-note {
+        max-width: 340px;
+        margin-bottom: 30px;
+    }
+    .get-notified-row {
+        max-width: 358px;
+    }
+    .footer-logo {
+        margin: 0 auto 17px;
+    }
+    .footer-global {
+        padding-top: 62px;
+        text-align: center;
+    }
+    .footer-info {
+        padding-bottom: 15px;
+        ul {
+            li {}
+        }
+    }
+    .footer-line {
+        margin-top: 26px;
+        margin-bottom: 29px;
+    }
+    .footer-toolbar {
+        margin-bottom: 34px;
+        li {
+            margin-right: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 8px;
+        }
+    }
+    .footer-social {
+        justify-content: center;
+        li {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+    .copyright {
+        p {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 320px;
+        }
+    }
+    //new mobile styles
+    body {
+        font-size: 16px;
+    }
+    .hero-note {
+        font-size: 22px;
+    }
+    .teachers-title h2 {
+        font-weight: 600;
+    }
+    .how-it-works-content h3 {
+        font-size: 32px;
+    }
+    .how-it-works-content {
+        font-size: 16px;
+    }
+    .tech-slide-content p {
+        margin-bottom: 50px;
+    }
+    .tech-slide-content {
+        font-size: 16px;
+    }
+    .review-quote {
+        font-size: 24px;
+    }
+    .review-name {
+        font-size: 22px;
+        opacity: 0.39;
+    }
+    .get-started-content h3 {
+        font-size: 32px;
+    }
+    .get-notified-title {
+        font-size: 32px;
+    }
+    .get-notified-note {
+        color: #363C50;
+        font-size: 16px;
+        opacity: 0.7;
+    }
+}
+@include media-breakpoint-down(xs) {
+}
+@media (max-width: 370px) {
+    .hero-title {
+        font-size: 40px;
+    }
+    .hero-note {
+        font-size: 22px;
+    }
+}
