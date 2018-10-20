@@ -3016,7 +3016,8 @@ button.button {
 
 /* header */
 .header-global {
-  position: fixed;
+  /*position: fixed;*/
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -3188,7 +3189,8 @@ a.logo:hover {
 
 /* footer */
 .footer-global {
-  padding: 92px 0 42px;
+  /*padding: 92px 0 42px;*/
+  padding: 40px 0 42px;
   background: #20C2DA;
   color: #ffffff;
 }
@@ -3244,7 +3246,8 @@ a.logo:hover {
 }
 
 .footer-line {
-  margin: 48px 0 50px;
+  /*margin: 48px 0 50px;*/
+  margin: 0 0 50px;
   background: #ffffff;
   opacity: 0.12;
   height: 1px;
@@ -3356,7 +3359,7 @@ a.logo:hover {
 }
 
 .hero-title h1 {
-  font-size: 80%;
+  font-size: 100%;
   font-family: "Montserrat", Times, Georgia, serif;
   font-weight: 600;
 }
@@ -3624,7 +3627,7 @@ a.teachers-slide-link {
 }
 
 .get-started {
-  background: #C3C2C3;
+  background: #d4d4d4;
   position: relative;
 }
 
@@ -4599,7 +4602,7 @@ a.instagram-follow:before {
   .get-started-photo {
     margin-left: 0;
     max-width: none;
-    margin-left: -29%;
+    margin-left: -17%;
     margin-right: -20%;
   }
   a.logo {
@@ -4903,8 +4906,8 @@ a.instagram-follow:before {
 }
 
 .animated {
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+  webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -4924,8 +4927,8 @@ a.instagram-follow:before {
 }
 
 .animated1 {
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
