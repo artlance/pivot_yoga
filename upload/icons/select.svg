@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="6px" viewBox="0 0 24 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Product-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-331.000000, -594.000000)" fill="#202124" id="Hero">
+            <g transform="translate(0.000000, 15.000000)">
+                <g id="Shirt" transform="translate(124.000000, 543.000000)">
+                    <g id="Size">
+                        <g transform="translate(124.000000, 18.000000)">
+                            <g id="Field">
+                                <path d="M90.7608735,21.5573236 L86.3943585,25.7692065 C86.0749773,26.0769312 85.5585077,26.0769312 85.2391265,25.7692065 C84.9202912,25.4614818 84.9202912,24.96281 85.2391265,24.6550853 L89.0285714,21.000263 L85.2391265,17.3449147 C84.9202912,17.03719 84.9202912,16.5385182 85.2391265,16.2307935 C85.5585077,15.9230688 86.0749773,15.9230688 86.3943585,16.2307935 L90.7608735,20.4432024 C91.0797088,20.7509271 91.0797088,21.2495989 90.7608735,21.5573236 L90.7608735,21.5573236 Z" id="Arrow" transform="translate(88.000000, 21.000000) rotate(-270.000000) translate(-88.000000, -21.000000) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

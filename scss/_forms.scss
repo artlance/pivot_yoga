@@ -34,6 +34,26 @@ select.select {
 select.select::-ms-expand {
     display: none;
 }
+select.select-size {
+    cursor: pointer;
+    padding: 0 52px 0 40px;
+    color: #202124;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: $ft;
+    height: 42px;
+    border: 1px solid #c7c7ca;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border-radius: 6px;
+    background: #e3e3e6 url('../upload/icons/select.svg') 100% 50% no-repeat;
+    background-size: 24px 6px;
+}
+select.select-size::-ms-expand {
+    display: none;
+}
 .checkbox,
 .radio {
     display: block;
@@ -87,6 +107,9 @@ button.button {
         &:hover {
             color: $w;
         }
+    }
+    &-shadow {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
     }
 }
 input.button,

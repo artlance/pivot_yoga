@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="24px" viewBox="0 0 16 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>tablet-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Product-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-433.000000, -5986.000000)" id="tech-Specs">
+            <g transform="translate(-521.000000, 5467.000000)">
+                <g id="specs" transform="translate(651.000000, 384.000000)">
+                    <g id="tablet-2" transform="translate(304.000000, 136.000000)">
+                        <path d="M12.6,22 L1.4,22 C0.6265,22 0,21.105 0,20 L0,2 C0,0.895 0.6265,0 1.4,0 L12.6,0 C13.3735,0 14,0.895 14,2 L14,20 C14,21.105 13.3735,22 12.6,22 Z" id="Shape" stroke="#20C2DA" stroke-width="2" stroke-linecap="square"></path>
+                        <circle id="Oval" fill="#20C2DA" fill-rule="nonzero" cx="7" cy="18" r="1"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

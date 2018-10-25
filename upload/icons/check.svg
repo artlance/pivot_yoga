@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Product-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-169.000000, -594.000000)" fill="#FFFFFF" fill-rule="nonzero" id="Hero">
+            <g transform="translate(0.000000, 15.000000)">
+                <g id="Shirt" transform="translate(124.000000, 543.000000)">
+                    <g id="Selector">
+                        <g transform="translate(0.000000, 26.000000)">
+                            <path d="M45.1615385,16.16 C45.0538462,16.048 45,15.88 45,15.768 C45,15.656 45.0538462,15.488 45.1615385,15.376 L45.9153846,14.592 C46.1307692,14.368 46.4538462,14.368 46.6692308,14.592 L46.7230769,14.648 L49.6846154,17.952 C49.7923077,18.064 49.9538462,18.064 50.0615385,17.952 L57.2769231,10.168 L57.3307692,10.168 C57.5461538,9.944 57.8692308,9.944 58.0846154,10.168 L58.8384615,10.952 C59.0538462,11.176 59.0538462,11.512 58.8384615,11.736 L50.2230769,21.032 C50.1153846,21.144 50.0076923,21.2 49.8461538,21.2 C49.6846154,21.2 49.5769231,21.144 49.4692308,21.032 L45.2692308,16.328 L45.1615385,16.16 Z" id="Check"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="30px" viewBox="0 0 26 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>signal</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Product-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g transform="translate(-727.000000, -5850.000000)" id="tech-Specs" stroke="#20C2DA" stroke-width="2">
+            <g transform="translate(-521.000000, 5467.000000)">
+                <g id="specs" transform="translate(651.000000, 384.000000)">
+                    <g id="signal" transform="translate(598.000000, 0.000000)">
+                        <path d="M10.4,28 L2.6,28 C1.1635,28 0,26.8492857 0,25.4285714 L0,12.5714286 C0,11.1507143 1.1635,10 2.6,10 L10.4,10 C11.8365,10 13,11.1507143 13,12.5714286 L13,25.4285714 C13,26.8492857 11.8365,28 10.4,28 Z" id="Shape"></path>
+                        <path d="M18,11 C18,7.6868 15.3132,5 12,5" id="Shape"></path>
+                        <path d="M24,11 C24,4.92433333 18.628,0 12,0" id="Shape"></path>
+                        <path d="M0,23 L13,23" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

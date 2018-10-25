@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>wash-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Product-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1031.000000, -6089.000000)" id="tech-Specs" stroke="#20C2DA" stroke-width="2">
+            <g transform="translate(-521.000000, 5467.000000)">
+                <g id="specs" transform="translate(651.000000, 384.000000)">
+                    <g id="wash-2" transform="translate(902.000000, 239.000000)">
+                        <path d="M5,12.538202 C11.6,7.2662056 9.8,17.6573868 17,12.538202" id="Shape"></path>
+                        <rect id="Rectangle-path" stroke-linecap="square" x="0" y="0" width="22" height="22"></rect>
+                        <circle id="Oval" stroke-linecap="square" cx="11" cy="13" r="6"></circle>
+                        <path d="M0,3 L22,3" id="Shape" stroke-linecap="square"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

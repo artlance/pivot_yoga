@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>pantone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Product-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-434.000000, -6161.000000)" id="tech-Specs" stroke="#20C2DA" stroke-width="2">
+            <g transform="translate(-521.000000, 5467.000000)">
+                <g id="specs" transform="translate(651.000000, 384.000000)">
+                    <g id="pantone" transform="translate(305.000000, 311.000000)">
+                        <polyline id="Shape" points="13.171 6.568 17 8.881 9.993 20.481"></polyline>
+                        <polyline id="Shape" points="10 2.227 14 3.22 10.005 19.344"></polyline>
+                        <rect id="Rectangle-path" stroke-linecap="square" x="0" y="0" width="10" height="22"></rect>
+                        <path d="M0,14 L10,14" id="Shape" stroke-linecap="square"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

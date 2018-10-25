@@ -10,12 +10,26 @@
     transition: transform $d*2 $f, opacity $d*2 $f, background-color $d*2 $f;
     transform: translate3d(0, 0, 0);
     z-index: 9090;
-    &.from-top {
-        background: rgba(17, 8, 41, 0.9);
-        transform: translate3d(0, -25px, 0);
+    // &.from-top {
+    //     background: rgba(17, 8, 41, 0.9);
+    //     transform: translate3d(0, -25px, 0);
+    // }
+    // &.nav-up {
+    //     transform: translate3d(0, -101%, 0) !important;
+    // }
+}
+.page-inner {
+    .header-global {
+        padding-top: 25px;
+        position: fixed;
     }
-    &.nav-up {
-        transform: translate3d(0, -101%, 0) !important;
+    a.logo {
+        width: 161px;
+    }
+}
+.page-product {
+    .header-global {
+        background-color: #D6D5DA !important;
     }
 }
 a.logo {
@@ -63,12 +77,25 @@ a.logo {
         }
     }
     a.button {
+        text-align: center;
+        min-width: 158px;
         font-size: 16px;
         padding: 7px 28px !important;
         margin-bottom: 3px;
         margin-left: 11px;
+        color: $w !important;
         &:hover {
             opacity: 1 !important;
+        }
+    }
+}
+.page-inner {
+    .menu {
+        margin-top: -2px;
+        & > li {
+            & > a {
+                color: #363C50;
+            }
         }
     }
 }

@@ -141,24 +141,24 @@ $(document).ready(function() {
 
     //------------------------------------------------------------------------//
 
-    var Spectra = {
-      //example instaToken: '2136707.12e2743.9576ae17af4e4ad4aebf6b72433c01fd',
-      instaToken: '8098378008.d5de661.6ae4ff521acf497095fcaa340f9e3972',
+    // var Spectra = {
+    //   //example instaToken: '2136707.12e2743.9576ae17af4e4ad4aebf6b72433c01fd',
+    //   instaToken: '8098378008.d5de661.6ae4ff521acf497095fcaa340f9e3972',
 
-      init: function () {
-        $.fn.spectragram.accessData = {
-          accessToken: this.instaToken,
-          clientID: this.instaID
-        };
+    //   init: function () {
+    //     $.fn.spectragram.accessData = {
+    //       accessToken: this.instaToken,
+    //       clientID: this.instaID
+    //     };
 
-        // method getUserFeed
-        $('.instagram-slider').spectragram('getUserFeed',{
-          max: 120,
-          size: "medium",
-          wrapEachWith: '<div class="instagram-item">'
-        });
-      }
-    }
+    //     // method getUserFeed
+    //     $('.instagram-slider').spectragram('getUserFeed',{
+    //       max: 120,
+    //       size: "medium",
+    //       wrapEachWith: '<div class="instagram-item">'
+    //     });
+    //   }
+    // }
 
     // var Spectra = {
     //   instaToken: '8098378008.d5de661.6ae4ff521acf497095fcaa340f9e3972',
@@ -179,9 +179,83 @@ $(document).ready(function() {
     //   }
     // }
 
-    Spectra.init();
+    //Spectra.init();
 
     //------------------------------------------------------------------------//
+
+    $(function(){$('.tabs').delegate('li:not(.active)','click',function(){$(this).addClass('active').siblings().removeClass('active').parents('.tab').find('.box').hide().eq($(this).index()).fadeIn(400, function() {  });})});
+
+    //------------------------------------------------------------------------//
+
+    //slider
+    $('.product-gallery').slick({
+        dots: false,
+        arrows: false,
+        draggable: true,
+        infinite: false,
+        centerMode: false,
+        centerPadding: '0px',
+        autoplay: false,
+        autoplaySpeed: 5000,
+        speed: 500,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
+        slide: '.product-gallery-item',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.product-thumbnails',
+        //fade: true
+    });
+
+    //slider
+    $('.product-thumbnails').slick({
+        dots: false,
+        arrows: false,
+        draggable: true,
+        infinite: false,
+        centerMode: false,
+        centerPadding: '0px',
+        autoplay: false,
+        autoplaySpeed: 5000,
+        speed: 500,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
+        slide: '.product-thumbnail',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product-gallery',
+        focusOnSelect: true,
+        //fade: true
+    });
+
+    //------------------------------------------------------------------------//
+
+    function colorChange(elementInput) {
+        var thisParent = elementInput.parents('.radio-color');
+        var thisText = thisParent.find('label').text();
+        elementInput.parents('.color-group').find('.color-list-value').text(thisText);
+    }
+    $('.color-list input:checked').each(function(index, el) {
+        colorChange($(this));
+    });
+    $('.color-list input').on('change', function(event) {
+        colorChange($(this));
+    });
+
+    //------------------------------------------------------------------------//
+
+    $('.video-toggle').on('click', function(event) {
+        event.preventDefault();
+        $(this).fadeOut('150');
+        document.getElementById('product-video-play').play();
+    });
+
+    //------------------------------------------------------------------------//
+
+    $('.faq-item-title').on('click', function(event) {
+        event.preventDefault();
+        $(this).parents('.faq-item').toggleClass('open');
+    });
 
 }); //document ready
 
@@ -242,8 +316,20 @@ $(window).load(function() {
         offset: "100%"
     });
 
-    $('.teachers-title h2, .teachers-slider, .teachers-navigation, .reviews-slider, .get-started-content, .js-cm-form').waypoint(function(direction) {
+    $('.teachers-title h2, .teachers-slider, .teachers-navigation, .reviews-slider, .get-started-content, .js-cm-form, .product-teachers-content *, .video-toggle-title, .video-toggle-play, .product-design-title, .product-design-description, .product-design-more, .product-faq-title, .faq-navigation, .faq, .product-tech-group, .product-tech-title').waypoint(function(direction) {
         $(this.element).addClass('animated1 fadeInUp').addClass('visibility-visible');
+    }, {
+        offset: "85%"
+    });
+
+    $('.product-title, .product-price-st, .product-price-mo, .product-description, .color-group, .product-navigation, .product-thumbnails-wrapper').waypoint(function(direction) {
+        $(this.element).addClass('animated1 fadeInUp').addClass('visibility-visible');
+    }, {
+        offset: "95%"
+    });
+
+    $('.product-gallery-wrapper, .product-design-image').waypoint(function(direction) {
+        $(this.element).addClass('animated1 fadeIn').addClass('visibility-visible');
     }, {
         offset: "85%"
     });
@@ -411,38 +497,48 @@ $(window).load(function() {
 
     //------------------------------------------------------------------------//
 
-    $('.instagram-slider').slick({
-        dots: false,
-        arrows: false,
-        draggable: true,
-        infinite: true,
-        centerMode: true,
-        centerPadding: '11.5%',
-        autoplay: false,
-        autoplaySpeed: 5000,
-        speed: 500,
-        pauseOnHover: false,
-        pauseOnDotsHover: false,
-        slide: '',
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        focusOnSelect: true,
-        swipeToSlide: true,
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                centerPadding: '23.5%',
-              }
-            }
-          ]
+    // $('.instagram-slider').slick({
+    //     dots: false,
+    //     arrows: false,
+    //     draggable: true,
+    //     infinite: true,
+    //     centerMode: true,
+    //     centerPadding: '11.5%',
+    //     autoplay: false,
+    //     autoplaySpeed: 5000,
+    //     speed: 500,
+    //     pauseOnHover: false,
+    //     pauseOnDotsHover: false,
+    //     slide: '',
+    //     slidesToShow: 5,
+    //     slidesToScroll: 1,
+    //     focusOnSelect: true,
+    //     swipeToSlide: true,
+    //     responsive: [
+    //         {
+    //           breakpoint: 1024,
+    //           settings: {
+    //             slidesToShow: 3,
+    //           }
+    //         },
+    //         {
+    //           breakpoint: 480,
+    //           settings: {
+    //             slidesToShow: 1,
+    //             centerPadding: '23.5%',
+    //           }
+    //         }
+    //       ]
+    // });
+
+    function getWidHeight() {
+        var bodyWidth = $('body').innerWidth();
+        var snapHeight = bodyWidth * 0.142857142857;
+        $('.snapwidget-widget').css({ 'height': snapHeight+'px'});
+    }
+    getWidHeight();
+    $(window).resize(function() {
+        getWidHeight();
     });
 
 });//window load

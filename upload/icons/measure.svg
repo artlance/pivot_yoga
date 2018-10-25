@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="27px" viewBox="0 0 29 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>measure-17</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Product-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g transform="translate(-368.000000, -586.000000)" id="Hero" stroke="#111111">
+            <g transform="translate(0.000000, 15.000000)">
+                <g id="Shirt" transform="translate(124.000000, 543.000000)">
+                    <g id="measure-17">
+                        <g transform="translate(245.000000, 28.000000)">
+                            <path d="M10,10 L13,13" id="Shape"></path>
+                            <path d="M7,13 L9,15" id="Shape"></path>
+                            <path d="M16,4 L19,7" id="Shape"></path>
+                            <path d="M13,7 L15,9" id="Shape"></path>
+                            <path d="M4,16 L7,19" id="Shape"></path>
+                            <polygon id="Shape" points="7 27 0 20 19 1 20 0 27 7"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
