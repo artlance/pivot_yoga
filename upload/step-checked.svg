@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="13px" viewBox="0 0 15 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Checkout" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shipping" transform="translate(-1037.000000, -116.000000)" fill="#20C2DA" fill-rule="nonzero">
+            <g id="Header-Bar" transform="translate(-20.000000, 83.000000)">
+                <g id="Steps" transform="translate(1047.000000, 22.000000)">
+                    <polygon id="Shape" points="15.25 23.3529412 10 17.9485294 12.25 15.6323529 15.25 18.7205882 22.75 11 25 13.3161765"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="7px" viewBox="0 0 29 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>triangle-down-20</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="input/dropdown" transform="translate(-293.000000, -20.000000)" fill="#20C2DA" fill-rule="nonzero">
+            <g id="triangle-down-20" transform="translate(293.000000, 20.000000)">
+                <path d="M9.5,0 L0.5,0 C0.3105,0 0.1375,0.107 0.0525,0.2765 C-0.0315,0.446 -0.0135,0.6485 0.1,0.8 L4.6,6.8 C4.694,6.926 4.8425,7 5,7 C5.1575,7 5.3055,6.926 5.4,6.8 L9.9,0.8 C10.014,0.6485 10.032,0.446 9.9475,0.2765 C9.8625,0.107 9.6895,0 9.5,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

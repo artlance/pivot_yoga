@@ -228,6 +228,12 @@ $(document).ready(function() {
         //fade: true
     });
 
+    $(document).on('click', '.product-thumbnail', function(event) {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 400);
+    });
+
     //------------------------------------------------------------------------//
 
     function colorChange(elementInput) {
@@ -244,11 +250,11 @@ $(document).ready(function() {
 
     //------------------------------------------------------------------------//
 
-    $('.video-toggle').on('click', function(event) {
-        event.preventDefault();
-        $(this).fadeOut('150');
-        document.getElementById('product-video-play').play();
-    });
+    // $('.video-toggle').on('click', function(event) {
+    //     event.preventDefault();
+    //     $(this).fadeOut('150');
+    //     document.getElementById('product-video-play').play();
+    // });
 
     //------------------------------------------------------------------------//
 
@@ -256,6 +262,31 @@ $(document).ready(function() {
         event.preventDefault();
         $(this).parents('.faq-item').toggleClass('open');
     });
+
+    //------------------------------------------------------------------------//
+
+    //Color
+    var labelColor = '';
+    $('.radio-color').each(function(index, el) {
+        var thisText = $(this).find('label').text();
+        switch(thisText) {
+            case 'Purple Haze':
+                labelColor = '503A8E';
+                break;
+            case 'Blue':
+                labelColor = '5E8DC5';
+                break;
+            case 'Gray':
+                labelColor = '636363';
+                break;
+            default:
+                labelColor = '202124';
+        }
+        $(this).find('label').css({
+            'background': '#'+labelColor
+        });
+    });
+
 
 }); //document ready
 
@@ -310,13 +341,13 @@ $(window).load(function() {
         offset: "100%"
     });
 
-    $('.header-global-container').waypoint(function(direction) {
+    $('.header-global-container, .modal-header').waypoint(function(direction) {
         $(this.element).addClass('animated1 fadeInDown').addClass('visibility-visible');
     }, {
         offset: "100%"
     });
 
-    $('.teachers-title h2, .teachers-slider, .teachers-navigation, .reviews-slider, .get-started-content, .js-cm-form, .product-teachers-content *, .video-toggle-title, .video-toggle-play, .product-design-title, .product-design-description, .product-design-more, .product-faq-title, .faq-navigation, .faq, .product-tech-group, .product-tech-title').waypoint(function(direction) {
+    $('.teachers-title h2, .teachers-slider, .teachers-navigation, .reviews-slider, .get-started-content, .js-cm-form, .product-teachers-content *, .video-toggle-title, .video-toggle-play, .product-design-title, .product-design-description, .product-design-more, .product-faq-title, .faq-navigation, .faq, .product-tech-group, .product-tech-title, .teacher, .teacher-info-content, .hero-inner, .info-inner-content, .teachers-cta-content, .breadcrumbs').waypoint(function(direction) {
         $(this.element).addClass('animated1 fadeInUp').addClass('visibility-visible');
     }, {
         offset: "85%"
@@ -540,6 +571,85 @@ $(window).load(function() {
     $(window).resize(function() {
         getWidHeight();
     });
+
+
+    (function($) {
+
+        var $source = $("#billing-info");
+        var $sourceInput = $source.find(":input:not([type=hidden])");
+        var $target = $("#shipping-info");
+        var $targetInput = $target.find(":input:not([type=hidden])");
+
+        var $chk = $(document).find('.js-mirrordata');
+
+        var _regex = /\[(.*?)\]/;
+        var _ev = "keyup blur change";
+
+        // Update vars.
+        $(window).on('onAfterAjaxUpdate', function(){
+            $source = $("#billing-info");
+            $sourceInput = $source.find(":input:not([type=hidden])");
+            $target = $("#shipping-info");
+            $targetInput = $target.find(":input:not([type=hidden])");
+
+            $targetInput.prop('disabled', $chk.is(':checked'));
+        });
+
+        // Update on typing.
+        $(document).on(_ev, $sourceInput, function(ev) {
+
+            $chk = $(document).find('.js-mirrordata');
+
+            if (!$chk.is(':checked')) {
+                return;
+            }
+
+            mirrorField.apply(ev.target);
+
+            return false;
+        });
+
+        $(document).on('change', $chk, function() {
+            $targetInput.prop('disabled', $chk.is(':checked'));
+        });
+
+        $targetInput.prop('disabled', $chk.is(':checked'));
+
+
+        function mirrorField() {
+
+            if (!$(this).attr("name")) {
+                return;
+            }
+
+            var $el = $(this);
+            var mirrorVal = $el.val();
+            var nameMatch = $el.attr("name").match(_regex);
+
+            // $target = $("#shipping-info");
+            // $targetInput = $target.find(":input:not([type=hidden])");
+
+            if (!nameMatch) {
+                return;
+            }
+
+            nameMatch = nameMatch[1];
+
+            var re = new RegExp(nameMatch, "g");
+            var $targetEl = $targetInput.filter(function() {
+                return this.name.match(re);
+            });
+
+            $targetEl.val(mirrorVal);
+
+            if ($el[0].id === "billing_country") {
+                $targetEl.trigger("change");
+            }
+        }
+
+    })(jQuery);
+
+
 
 });//window load
 

@@ -32,6 +32,11 @@
         background-color: #D6D5DA !important;
     }
 }
+.page-default {
+    .header-global {
+        position: absolute !important;
+    }
+}
 a.logo {
     display: block;
     width: 200px;
@@ -52,7 +57,7 @@ a.logo {
     font-family: $ft;
     font-size: 16px;
     & > li {
-        margin: 0 0 0 26px;
+        margin: 0 0 0 24px;
         &.current-menu-parent {}
         &.current-menu-item {}
         &.menu-item-has-children {}
@@ -77,15 +82,22 @@ a.logo {
         }
     }
     a.button {
+        white-space: nowrap;
         text-align: center;
         min-width: 158px;
         font-size: 16px;
-        padding: 7px 28px !important;
+        padding: 7px 24px !important;
         margin-bottom: 3px;
-        margin-left: 11px;
         color: $w !important;
+        font-family: $ft !important;
         &:hover {
             opacity: 1 !important;
+        }
+        &.button-secondary {
+            font-weight: normal !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            min-width: 0 !important;
         }
     }
 }
@@ -95,6 +107,14 @@ a.logo {
         & > li {
             & > a {
                 color: #363C50;
+            }
+        }
+        a.button {
+            &.button-secondary {
+                color: #363C50 !important;
+                &:hover {
+                    color: $w !important;
+                }
             }
         }
     }

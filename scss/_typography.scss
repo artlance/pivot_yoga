@@ -14,8 +14,43 @@ a {
         text-decoration: underline;
     }
 }
+.content-title {
+    text-align: center;
+    font-family: $ft;
+    color: #110829;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    padding-bottom: 86px;
+    h1 {
+        font-size: 100%;
+        font-weight: 600;
+    }
+}
+.content {
+    padding-top: 128px;
+    padding-bottom: 120px;
+}
+.page-text {
+    background-color: $w;
+    .main {
+        background-color: $w;
+    }
+    .wysiwyg {
+        font-family: $ft;
+        font-size: 14px;
+        line-height: 1.785;
+        h4 {
+            line-height: 1.5;
+        }
+    }
+}
 .wysiwyg {
     @extend .clearfix;
+    font-size: 16px;
+    color: #36393B;
+    line-height: 1.5;
     h1 {
         margin-top: $spacer;
         margin-bottom: $spacer;
@@ -25,20 +60,34 @@ a {
         margin-bottom: $spacer;
     }
     h3 {
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: bold;
         margin-top: $spacer;
         margin-bottom: $spacer;
     }
+    h3 + h6 {
+        margin-top: -17px;
+    }
     h4 {
         margin-top: $spacer;
-        margin-bottom: $spacer;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    h4 + p {
+        margin-top: 0;
     }
     h5 {
         margin-top: $spacer;
         margin-bottom: $spacer;
     }
     h6 {
+        font-size: 14px;
         margin-top: $spacer;
         margin-bottom: $spacer;
+    }
+    h6 + p {
+        margin-top: 37px;
     }
     p {
         margin-top: $spacer;
@@ -76,10 +125,10 @@ a {
     }
     hr {
         clear: both;
-        margin-top: $spacer;
-        margin-bottom: $spacer;
+        margin-top: 56px;
+        margin-bottom: 55px;
         border: 0;
-        border-bottom: 1px solid $light-gray;
+        border-bottom: 1px solid #DDDDDD;
         &.transparent {
             border-bottom-color: $transparent;
         }
