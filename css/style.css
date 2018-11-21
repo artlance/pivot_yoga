@@ -1,5 +1,5 @@
 /* reboot */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600|Open+Sans:400,600,700");
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2779,6 +2779,7 @@ a.underline {
 .main {
   min-height: 100%;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -4561,7 +4562,8 @@ a.logo:hover {
   margin: 0 auto;
 }
 
-.info-inner-content h1 {
+.info-inner-content h1,
+.info-inner-content h2 {
   font-weight: 600;
   color: #110829;
   font-size: 36px;
@@ -6254,73 +6256,6 @@ a.cart-delete:after {
   padding-bottom: 70px;
 }
 
-.teacher-course-link {
-  display: block;
-  background: #ffffff;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  color: #444444;
-  padding: 16px 15px 15px;
-}
-
-.teacher-course-link:hover {
-  color: #444444;
-}
-
-.teacher-course-photo {
-  display: block;
-}
-
-.teacher-course-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.teacher-course-title {
-  display: block;
-  letter-spacing: -0.25px;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Montserrat", Times, Georgia, serif;
-  color: #110829;
-}
-
-.teacher-course-subtitle {
-  display: block;
-  color: #2FA8BA;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.teacher-course-description {
-  display: block;
-  font-size: 14px;
-  line-height: 1.571;
-}
-
-.teacher-course-meta {
-  display: block;
-  color: #202124;
-  font-size: 14px;
-}
-
-.teacher-testimonial {
-  position: relative;
-  padding: 100px 0 100px;
-}
-
-.teacher-testimonial-link {
-  display: block;
-}
-
-.teacher-testimonial-link img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 /* home */
 .hero {
   color: #ffffff;
@@ -7815,7 +7750,9 @@ a.instagram-follow:before {
   .info-inner {
     padding-bottom: 80px;
   }
-  .info-inner-content h1 {
+
+  .info-inner-content h1,
+  .info-inner-content h2 {
     font-size: 28px;
   }
   .product-teachers-content h2,
@@ -8632,3 +8569,435 @@ a.instagram-follow:before {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
 }
+
+/**
+ ** Design Page Leah
+ */
+
+/* .design-features component */
+.design-features {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  background-color: #110829;
+  color: #FFFFFF;
+}
+
+  @media (min-width: 1024px) {
+    .design-features {
+      padding-top: 200px;
+      padding-bottom: 120px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .design-features {
+      padding-top: 250px;
+      padding-bottom: 185px;
+    }
+  }
+
+.design-features__list {
+  /* TODO: potentially break into separate component if this pattern gets reused. */
+}
+
+  .design-features__list .slick-prev {
+    top: -65px;
+    right: 38px;
+  }
+  .design-features__list .slick-next {
+    top: -65px;
+    right: 0;
+  }
+
+  .design-features__list .slick-dots {
+    top: -150px;
+    bottom: auto;
+    border-bottom: solid  1px rgba(255, 255, 255, 0.15);
+    font-family: "Montserrat", Times, Georgia, serif;
+    font-weight: 500;
+  }
+
+    @media (min-width: 1200px) {
+      .design-features__list .slick-dots {
+        top: -200px;
+      }
+    }
+
+    .design-features__list .slick-dots li {
+      width: auto;
+      height: auto;
+    }
+
+    .design-features__list .slick-dots li.slick-active a {
+      border-color: #20C2DA;
+      color: #FFF;
+    }
+
+    .design-features__list .slick-dots a {
+      display: block;
+      cursor: pointer;
+      padding: 15px 10px;
+      margin-right: 5px;
+      margin-left: 5px;
+      border-bottom: solid 3px transparent;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 0.96rem;
+    }
+
+      .design-features__list .slick-dots a:hover {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      @media (min-width: 1200px) {
+        .design-features__list .slick-dots a {
+          padding: 25px 15px;
+          margin-right: 10px;
+          margin-left: 10px;
+          font-size: 1rem;
+        }
+      }
+
+      @media (min-width: 1440px) {
+        .design-features__list .slick-dots a {
+          margin-right: 15px;
+          margin-left: 15px;
+        }
+      }
+
+
+
+/**
+ ** .feature-card Component
+ */
+.feature-card {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+  @media (max-width: 1023px) {
+    .feature-card {
+      max-width: 500px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .feature-card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+.feature-card__image {
+  margin-bottom: 40px;
+}
+
+  .feature-card__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 1024px) {
+    .feature-card__image {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 50%;
+              flex: 1 1 50%;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .feature-card__image {
+      -ms-flex-preferred-size: 55%;
+          flex-basis: 55%;
+    }
+  }
+
+.feature-card__content {}
+
+  @media (min-width: 1024px) {
+    .feature-card__content {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 50%;
+              flex: 1 1 50%;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      margin-right: 80px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .feature-card__content {
+      -ms-flex-preferred-size: 45%;
+          flex-basis: 45%;
+      margin-right: 160px;
+    }
+  }
+
+.feature-card__pre-heading {
+  font-family: "Montserrat", Times, Georgia, serif;
+  font-size: 0.96rem;
+}
+
+.feature-card__heading {
+  margin-bottom: 15px;
+  color: #FFFFFF;
+  font-family: "Montserrat", Times, Georgia, serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.feature-card__text {
+  font-size: 0.96rem;
+}
+
+/**
+ ** About Page
+ */
+
+/* .teachers-list component overrides for about page */
+.teachers-list--about {
+  padding-top: 0;
+  padding-bottom: 45px;
+}
+
+  .teachers-list--about .button {
+    margin-top: 30px;
+  }
+
+/* .about-testimonial component */
+.about-testimonial {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+  @media (min-width: 1024px) {
+    .about-testimonial {
+      padding-top: 200px;
+      padding-bottom: 300px;
+    }
+  }
+
+.about-testimonial__flower {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+
+/**
+ ** .testimonial-card Component
+ */
+.testimonial-card {}
+
+  @media (min-width: 1024px) {
+    .testimonial-card {
+      position: relative;
+    }
+      .testimonial-card:after { /* clearfix */
+        content: "";
+        display: table;
+        clear: both;
+      }
+  }
+
+.testimonial-card__image {
+
+}
+
+  @media (min-width: 1024px) {
+    .testimonial-card__image {
+      display: inline-block;
+      float: left;
+      width: 58%;
+    }
+  }
+
+  .testimonial-card__image img {
+    display: block;
+  }
+
+.testimonial-card__content {
+  position: relative;
+  padding: 30px;
+  background: #FFFFFF;
+}
+
+  @media (min-width: 768px) {
+    .testimonial-card__content {
+      padding: 55px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .testimonial-card__content {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      display: inline-block;
+      float: left;
+      width: 58%;
+      padding: 70px 85px;
+      margin-left: -16%;
+      -webkit-box-shadow: 6px 6px 37px 0px rgba(102, 102, 102, 0.3);
+              box-shadow: 6px 6px 37px 0px rgba(102, 102, 102, 0.3);
+    }
+  }
+
+  .testimonial-card__content:after {
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    content: "";
+    width: 9px;
+    background: #20C2DA;
+    background: -webkit-linear-gradient(315deg, #3AD6DF 0%, #9614B4 100%);
+    background: -o-linear-gradient(315deg, #3AD6DF 0%, #9614B4 100%);
+    background: linear-gradient(135deg, #3AD6DF 0%, #9614B4 100%);
+  }
+
+.testimonial-card__title {
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Montserrat", Times, Georgia, serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+  @media (min-width: 768px) {
+    .testimonial-card__title {
+      margin-bottom: 20px;
+    }
+  }
+
+.testimonial-card__quote {
+  margin-bottom: 25px;
+  color: #000000;
+  font-family: "Montserrat", Times, Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+  @media (min-width: 768px) {
+    .testimonial-card__quote {
+      margin-bottom: 40px;
+      font-size: 2.1rem;
+    }
+  }
+
+.testimonial-card__author {
+  margin-bottom: 5px;
+  color: #000000;
+  font-family: "Montserrat", Times, Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.testimonial-card__bio {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Montserrat", Times, Georgia, serif;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+/**
+ ** Tech Page
+ */
+
+/* .tech-features component */
+.tech-features {
+  padding-top: 0px;
+  padding-bottom: 60px;
+  background-color: #110829;
+  color: #FFFFFF;
+}
+
+  @media (min-width: 1024px) {
+    .tech-features {
+      padding-top: 0px;
+      padding-bottom: 120px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .tech-features {
+      padding-top: 50px;
+      padding-bottom: 185px;
+    }
+  }
+
+.tech-features__links {
+  margin-bottom: 90px;
+  border-bottom: solid  1px rgba(255, 255, 255, 0.15);
+  font-family: "Montserrat", Times, Georgia, serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+  @media (min-width: 1200px) {
+    .tech-features__links {
+      margin-bottom: 120px;
+    }
+  }
+
+  .tech-features__links li {
+    display: inline-block;
+    margin: 0px 5px;
+  }
+
+  .tech-features__links a {
+    display: block;
+    cursor: pointer;
+    padding: 15px 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-bottom: solid 3px transparent;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.96rem;
+  }
+
+    .tech-features__links a:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media (min-width: 1200px) {
+      .tech-features__links a {
+        padding: 25px 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .tech-features__links a {
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+    }
+
+.tech-features__list-item { }
+
+  @media (min-width: 1024px) {
+    .tech-features__list-item {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .tech-features__list-item {
+      margin-bottom: 80px;
+    }
+  }
