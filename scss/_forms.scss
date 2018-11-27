@@ -49,7 +49,9 @@ textarea.textarea {
     @extend input.input-text;
     font-family: $fontFamily;
     overflow: auto;
-    height: auto;
+    height: 250px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     &:disabled {
         opacity: 0.25;
     }

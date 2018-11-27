@@ -270,11 +270,11 @@ $(document).ready(function() {
     $('.radio-color').each(function(index, el) {
         var thisText = $(this).find('label').text();
         switch(thisText) {
-            case 'Purple Haze':
-                labelColor = '503A8E';
+            case 'Purple Heather':
+                labelColor = '5F3C73';
                 break;
-            case 'Blue':
-                labelColor = '5E8DC5';
+            case 'Charcoal':
+                labelColor = '363636';
                 break;
             case 'Gray':
                 labelColor = '636363';
@@ -285,6 +285,95 @@ $(document).ready(function() {
         $(this).find('label').css({
             'background': '#'+labelColor
         });
+    });
+
+    //------------------------------------------------------------------------//
+
+    $(document).on("change", "#payment_method input", function() {
+        $("#payment_form").html('Loading...');
+        $(this).sendRequest("shop:onUpdatePaymentMethod", {
+            update: {
+                "#payment_form": "shop-paymentform"
+            }
+        });
+    });
+
+    //------------------------------------------------------------------------//
+
+    $('.how-step').hover(function() {
+        $(this).removeClass('how-step-disabled').siblings('.how-step').addClass('how-step-disabled');
+    }, function() {
+        $('.how-step').removeClass('how-step-disabled');
+    });
+
+    $('.how-step').on('click', function(event) {
+        event.preventDefault();
+        var slideIndex = $(this).index();
+        $('.how-steps-block').addClass('steps-modal-active');
+        $('.how-step-slider').slick('setPosition');
+        $('.how-step-slider').slick('slickGoTo', parseInt(slideIndex) );
+    });
+
+    $('.step-back-link').on('click', function(event) {
+        event.preventDefault();
+        $('.how-steps-block').addClass('steps-modal-fade');
+        setTimeout(function(){
+            $('.how-steps-block').removeClass('steps-modal-active').removeClass('steps-modal-fade');
+        }, 300);
+    });
+
+    $('.step-next-link').on('click', function(event) {
+        event.preventDefault();
+        $('.how-step-slider').slick('slickNext');
+    });
+
+    //------------------------------------------------------------------------//
+
+    //slider
+    $('.how-step-slider').slick({
+        dots: false,
+        arrows: false,
+        draggable: true,
+        infinite: true,
+        centerMode: false,
+        centerPadding: '0px',
+        autoplay: false,
+        autoplaySpeed: 5000,
+        speed: 500,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
+        slide: '.how-step-slide',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        //asNavFor: '',
+        fade: true
+    });
+
+    //------------------------------------------------------------------------//
+
+    $('.js-design-features-list').slick({
+      dots: false,
+      arrows: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      adaptiveHeight: true,
+      mobileFirst: true,
+      responsive: [
+        {
+          breakpoint: 1023,
+          settings: {
+            arrows: false,
+            dots: true,
+            customPaging : function(slider, i) {
+              console.log(slider.$slides[i]);
+              var tabTitle = $(slider.$slides[i]).find('.js-feature-card-heading').text();
+              return '<a>' + tabTitle + '</a>';
+            }
+          }
+        },
+      ]
     });
 
 
@@ -347,7 +436,7 @@ $(window).load(function() {
         offset: "100%"
     });
 
-    $('.teachers-title h2, .teachers-slider, .teachers-navigation, .reviews-slider, .get-started-content, .js-cm-form, .product-teachers-content *, .video-toggle-title, .video-toggle-play, .product-design-title, .product-design-description, .product-design-more, .product-faq-title, .faq-navigation, .faq, .product-tech-group, .product-tech-title, .teacher, .teacher-info-content, .hero-inner, .info-inner-content, .teachers-cta-content, .breadcrumbs').waypoint(function(direction) {
+    $('.teachers-title h2, .teachers-slider, .teachers-navigation, .reviews-slider, .get-started-content, .js-cm-form, .product-teachers-content *, .video-toggle-title, .video-toggle-play, .product-design-title, .product-design-description, .product-design-more, .product-faq-title, .faq-navigation, .faq, .product-tech-group, .product-tech-title, .teacher, .teacher-info-content, .hero-inner, .info-inner-content, .teachers-cta-content, .breadcrumbs, .how-testimonial-img, .how-testimonial-block, .teacher-testimonial-title, .teacher-testimonial-link, .teacher-course, .teacher-courses-title, .map-col, .contact-title, .contact-note, .feedback').waypoint(function(direction) {
         $(this.element).addClass('animated1 fadeInUp').addClass('visibility-visible');
     }, {
         offset: "85%"
@@ -359,7 +448,7 @@ $(window).load(function() {
         offset: "95%"
     });
 
-    $('.product-gallery-wrapper, .product-design-image').waypoint(function(direction) {
+    $('.product-gallery-wrapper, .product-design-image, .how-step').waypoint(function(direction) {
         $(this.element).addClass('animated1 fadeIn').addClass('visibility-visible');
     }, {
         offset: "85%"
@@ -651,12 +740,16 @@ $(window).load(function() {
 
 
 
+
 });//window load
 
 //*********************************************************************//
 
-$(window).resize(function() {
-
-    //resize
-
-});//window resize
+function submitOverride(){
+      $('#shipping-info :input').removeAttr('disabled');
+      $('#shipping-info :input').attr('readonly', 'readonly');
+      $('body').bind('onAjaxError', function(e){
+        $('#shipping-info :input').removeAttr('readonly');
+        $('#shipping-info :input').attr('disabled', 'disabled');
+      });
+    }
