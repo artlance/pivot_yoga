@@ -121,40 +121,45 @@ a.logo {
 }
 .navigation {}
 .navigation-toggle {
+    margin-top: -3px;
     display: none;
     position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 60px;
-    height: 60px;
+    right: 10px;
+    top: 50%;
+    width: 50px;
+    height: 50px;
     z-index: 5050;
+    border-radius: 5px;
+    transform: translate3d(0, -50%, 0);
     &:focus {
-        box-shadow: 0 0 0 3px $focus;
+        //box-shadow: 0 0 0 3px $focus;
     }
 }
 .navigation-toggle-icon {
     position: absolute;
     top: 50%;
-    left: 12px;
-    right: 12px;
+    left: 10px;
+    right: 10px;
     height: 2px;
-    background: $black;
+    background: $p;
+    border-radius: 1px;
     transform: translate3d(0, -50%, 0);
     transition: background-color $d $f;
     &:before,
     &:after {
+        border-radius: 1px;
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         height: 100%;
-        background: $black;
-        transform: translate3d(0, -10px, 0);
+        background: $p;
+        transform: translate3d(0, -9px, 0);
         transition: transform $d $f;
     }
     &:after {
-        transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 9px, 0);
     }
 }
 .navigation-open {

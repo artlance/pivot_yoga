@@ -50,6 +50,48 @@
         visibility: visible !important;
         animation-name: none !important;
     }
+    .navigation-toggle {
+        display: block;
+    }
+    .navigation {
+        display: none;
+    }
+    .navigation-open {
+        .navigation {
+            display: block;
+        }
+    }
+    .navigation {
+        position: absolute;
+        top: 100%;
+        margin-top: 10px;
+        right: 10px;
+        padding: 25px 20px 10px;
+        max-width: 300px;
+        border-radius: 10px;
+        background: $w;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+    .menu {
+        flex-wrap: wrap;
+        text-align: center;
+        & > li {
+            margin: 0 0 15px;
+            flex: 0 0 100%;
+            max-width: 100%;
+            & > a {
+                color: $text;
+            }
+            a.button {
+                &.button-secondary {
+                    color: #363C50 !important;
+                    &:hover {
+                        color: $w !important;
+                    }
+                }
+            }
+        }
+    }
     .teachers-hero {
         display: none !important;
     }
@@ -148,7 +190,7 @@
         margin-right: -20%;
     }
     a.logo {
-        margin: 0 auto;
+        margin: 0;
         max-width: 182px;
     }
     .hero {

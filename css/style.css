@@ -4317,27 +4317,27 @@ a.logo:hover {
 }
 
 .navigation-toggle {
+  margin-top: -3px;
   display: none;
   position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 60px;
-  height: 60px;
+  right: 10px;
+  top: 50%;
+  width: 50px;
+  height: 50px;
   z-index: 5050;
-}
-
-.navigation-toggle:focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(32, 194, 218, 0.15);
-  box-shadow: 0 0 0 3px rgba(32, 194, 218, 0.15);
+  border-radius: 5px;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
 }
 
 .navigation-toggle-icon {
   position: absolute;
   top: 50%;
-  left: 12px;
-  right: 12px;
+  left: 10px;
+  right: 10px;
   height: 2px;
-  background: #000000;
+  background: #20C2DA;
+  border-radius: 1px;
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
   -webkit-transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
@@ -4346,15 +4346,16 @@ a.logo:hover {
 }
 
 .navigation-toggle-icon:before, .navigation-toggle-icon:after {
+  border-radius: 1px;
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 100%;
-  background: #000000;
-  -webkit-transform: translate3d(0, -10px, 0);
-  transform: translate3d(0, -10px, 0);
+  background: #20C2DA;
+  -webkit-transform: translate3d(0, -9px, 0);
+  transform: translate3d(0, -9px, 0);
   -webkit-transition: -webkit-transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
@@ -4363,8 +4364,8 @@ a.logo:hover {
 }
 
 .navigation-toggle-icon:after {
-  -webkit-transform: translate3d(0, 10px, 0);
-  transform: translate3d(0, 10px, 0);
+  -webkit-transform: translate3d(0, 9px, 0);
+  transform: translate3d(0, 9px, 0);
 }
 
 .navigation-open .navigation-toggle-icon {
@@ -4972,7 +4973,7 @@ ul.color-list li {
   margin-top: -10vw;
   height: 0;
   padding-top: 60.7%;
-  background: transparent url("../upload/product-teachers.png") no-repeat 50% 0;
+  background: transparent url("../upload/product-teachers3.png") no-repeat 50% 0;
   background-size: cover;
   position: relative;
 }
@@ -8094,6 +8095,50 @@ a.instagram-follow:before {
     -webkit-animation-name: none !important;
     animation-name: none !important;
   }
+  .navigation-toggle {
+    display: block;
+  }
+  .navigation {
+    display: none;
+  }
+  .navigation-open .navigation {
+    display: block;
+  }
+  .navigation {
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+    right: 10px;
+    padding: 25px 20px 10px;
+    max-width: 300px;
+    border-radius: 10px;
+    background: #ffffff;
+    -webkit-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  }
+  .menu {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .menu > li {
+    margin: 0 0 15px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .menu > li > a {
+    color: #444444;
+  }
+  .menu > li a.button.button-secondary {
+    color: #363C50 !important;
+  }
+  .menu > li a.button.button-secondary:hover {
+    color: #ffffff !important;
+  }
   .teachers-hero {
     display: none !important;
   }
@@ -8200,7 +8245,7 @@ a.instagram-follow:before {
     margin-right: -20%;
   }
   a.logo {
-    margin: 0 auto;
+    margin: 0;
     max-width: 182px;
   }
   .hero {
