@@ -642,6 +642,21 @@
     .feedback {
         margin-left: 0;
     }
+    .news-item-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .news-content {
+        padding-left: 0;
+    }
+    .news-item-title {
+        text-align: center;
+        font-size: 24px;
+    }
+    .news-item-date {
+        text-align: center;
+        font-size: 16px;
+    }
 }
 @include media-breakpoint-down(xs) {
     //* { background: #f00; }
@@ -825,6 +840,14 @@
         padding-top: 30px;
         padding-bottom: 70px;
     }
+    .news-title,
+    .review-text-autor,
+    .media-information-title {
+        font-size: 30px;
+    }
+    .news-item-title {
+        font-size: 20px;
+    }
 }
 @media (max-width: 600px) {
     .how-steps-block {
@@ -833,9 +856,9 @@
     .how-step-slide {
         text-align: center;
         background-position: 60% 50%;
-        .container {
-            background: rgba(255, 255, 255, 0.7);
-        }
+        // .container {
+        //     background: rgba(255, 255, 255, 0.7);
+        // }
     }
     .how-step-single-title {
         font-size: 24px;
@@ -876,5 +899,10 @@
     .contact-title {
         letter-spacing: 0;
         font-size: 36px;
+    }
+    .news-title,
+    .review-text-autor,
+    .media-information-title {
+        font-size: 28px;
     }
 }

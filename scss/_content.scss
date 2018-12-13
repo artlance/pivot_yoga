@@ -1963,3 +1963,129 @@ a.cart-delete {
     padding-top: 7px;
     padding-bottom: 43px;
 }
+.media-information {
+    position: relative;
+    padding-top: 86px;
+    padding-bottom: 53px;
+    .container {
+        max-width: 1310px;
+    }
+}
+.news {
+    padding-bottom: 22px;
+}
+.news-title {
+    text-align: center;
+    color: #110829;
+    font-weight: 600;
+    font-family: $ft;
+    letter-spacing: -0.5px;
+    font-size: 36px;
+    margin-bottom: 70px;
+}
+.news-item {
+    margin-bottom: 62px;
+}
+.news-item-image {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    max-width: 196px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    img {
+        display: block;
+    }
+}
+.news-content {
+    padding-left: 20px;
+}
+.news-item-title {
+    font-size: 30px;
+    font-family: $ft;
+    color: #000000;
+    margin-bottom: 2px;
+    a {
+        color: #000000;
+        &:hover {
+            color: $p;
+        }
+    }
+}
+.news-item-date {
+    color: #4A4A4A;
+    font-size: 20px;
+    font-family: $ft;
+    opacity: 0.39;
+    margin-bottom: 12px;
+}
+.news-item-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444444;
+}
+.media-information-title {
+    text-align: center;
+    color: #110829;
+    font-weight: 600;
+    font-family: $ft;
+    letter-spacing: -0.5px;
+    font-size: 36px;
+    margin-bottom: 49px;
+}
+.media-information-list {
+    margin-bottom: 40px;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #444444;
+    max-height: 400px;
+    overflow: auto;
+}
+.media-information-item {
+    margin-bottom: 33px;
+}
+.media-information-item-title {
+    font-weight: bold;
+    color: #444444;
+    a {
+        color: #444444;
+        &:hover {
+            color: $p;
+        }
+    }
+}
+.media-information-item-date {
+    color: #9B9B9B;
+}
+.media-information-item-description {
+}
+.media-information-download {
+    max-width: 343px;
+    margin: 0 auto 40px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #232429;
+    font-weight: 300;
+    text-transform: uppercase;
+    &:hover {
+        color: $p;
+    }
+    strong {
+        font-weight: 600;
+    }
+}
+.media-information-download-img {
+    margin-bottom: 18px;
+    display: block;
+    img {
+        display: block;
+    }
+}
+.media-information-download-title {
+    letter-spacing: 0.5px;
+}
+

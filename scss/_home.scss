@@ -295,6 +295,23 @@ a.teachers-slide-link {
     font-family: $ft;
     color: $w;
     padding: 142px 0 189px;
+    .slick-dots {
+        display: none !important;
+    }
+}
+.review-text-autor {
+    font-weight: 600;
+    font-family: $ft;
+    letter-spacing: -0.5px;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.reviews-new {
+    padding-top: 63px;
+    padding-bottom: 155px;
+    .slick-dots {
+        display: block !important;
+    }
 }
 .review-avatar {
     margin: 0 auto 41px;

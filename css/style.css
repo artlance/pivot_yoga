@@ -3222,7 +3222,7 @@ button.button {
 
 .slick-dots {
   position: absolute;
-  bottom: -45px;
+  bottom: -65px;
   list-style: none;
   display: block;
   text-align: center;
@@ -3232,21 +3232,26 @@ button.button {
 
 .slick-dots li {
   display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin: 0px 5px;
+  height: 12px;
+  width: 12px;
+  margin: 0px 9px;
 }
 
 .slick-dots li button {
   border: 0;
-  background: #ff00ff;
+  background: #ffffff;
   display: block;
-  height: 20px;
-  width: 20px;
+  height: 12px;
+  width: 12px;
+  font-size: 0;
+  line-height: 0;
+  opacity: 0.3;
+  color: transparent;
+  border-radius: 50%;
 }
 
 .slick-dots li.slick-active button {
-  background: #ff0000;
+  opacity: 1;
 }
 
 body.compensate-for-scrollbar {
@@ -6903,6 +6908,155 @@ a.cart-delete:after {
   padding-bottom: 43px;
 }
 
+.media-information {
+  position: relative;
+  padding-top: 86px;
+  padding-bottom: 53px;
+}
+
+.media-information .container {
+  max-width: 1310px;
+}
+
+.news {
+  padding-bottom: 22px;
+}
+
+.news-title {
+  text-align: center;
+  color: #110829;
+  font-weight: 600;
+  font-family: "Montserrat", Times, Georgia, serif;
+  letter-spacing: -0.5px;
+  font-size: 36px;
+  margin-bottom: 70px;
+}
+
+.news-item {
+  margin-bottom: 62px;
+}
+
+.news-item-image {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  max-width: 196px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  display: block;
+  overflow: hidden;
+}
+
+.news-item-image img {
+  display: block;
+}
+
+.news-content {
+  padding-left: 20px;
+}
+
+.news-item-title {
+  font-size: 30px;
+  font-family: "Montserrat", Times, Georgia, serif;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.news-item-title a {
+  color: #000000;
+}
+
+.news-item-title a:hover {
+  color: #20C2DA;
+}
+
+.news-item-date {
+  color: #4A4A4A;
+  font-size: 20px;
+  font-family: "Montserrat", Times, Georgia, serif;
+  opacity: 0.39;
+  margin-bottom: 12px;
+}
+
+.news-item-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444444;
+}
+
+.media-information-title {
+  text-align: center;
+  color: #110829;
+  font-weight: 600;
+  font-family: "Montserrat", Times, Georgia, serif;
+  letter-spacing: -0.5px;
+  font-size: 36px;
+  margin-bottom: 49px;
+}
+
+.media-information-list {
+  margin-bottom: 40px;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #444444;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.media-information-item {
+  margin-bottom: 33px;
+}
+
+.media-information-item-title {
+  font-weight: bold;
+  color: #444444;
+}
+
+.media-information-item-title a {
+  color: #444444;
+}
+
+.media-information-item-title a:hover {
+  color: #20C2DA;
+}
+
+.media-information-item-date {
+  color: #9B9B9B;
+}
+
+.media-information-download {
+  max-width: 343px;
+  margin: 0 auto 40px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #232429;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.media-information-download:hover {
+  color: #20C2DA;
+}
+
+.media-information-download strong {
+  font-weight: 600;
+}
+
+.media-information-download-img {
+  margin-bottom: 18px;
+  display: block;
+}
+
+.media-information-download-img img {
+  display: block;
+}
+
+.media-information-download-title {
+  letter-spacing: 0.5px;
+}
+
 /* home */
 .hero {
   color: #ffffff;
@@ -7273,6 +7427,27 @@ a.teachers-slide-link {
   font-family: "Montserrat", Times, Georgia, serif;
   color: #ffffff;
   padding: 142px 0 189px;
+}
+
+.reviews .slick-dots {
+  display: none !important;
+}
+
+.review-text-autor {
+  font-weight: 600;
+  font-family: "Montserrat", Times, Georgia, serif;
+  letter-spacing: -0.5px;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.reviews-new {
+  padding-top: 63px;
+  padding-bottom: 155px;
+}
+
+.reviews-new .slick-dots {
+  display: block !important;
 }
 
 .review-avatar {
@@ -8709,6 +8884,21 @@ a.instagram-follow:before {
   .feedback {
     margin-left: 0;
   }
+  .news-item-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .news-content {
+    padding-left: 0;
+  }
+  .news-item-title {
+    text-align: center;
+    font-size: 24px;
+  }
+  .news-item-date {
+    text-align: center;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -8912,6 +9102,14 @@ a.instagram-follow:before {
     padding-top: 30px;
     padding-bottom: 70px;
   }
+  .news-title,
+  .review-text-autor,
+  .media-information-title {
+    font-size: 30px;
+  }
+  .news-item-title {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -8921,9 +9119,6 @@ a.instagram-follow:before {
   .how-step-slide {
     text-align: center;
     background-position: 60% 50%;
-  }
-  .how-step-slide .container {
-    background: rgba(255, 255, 255, 0.7);
   }
   .how-step-single-title {
     font-size: 24px;
@@ -8968,6 +9163,11 @@ a.instagram-follow:before {
   .contact-title {
     letter-spacing: 0;
     font-size: 36px;
+  }
+  .news-title,
+  .review-text-autor,
+  .media-information-title {
+    font-size: 28px;
   }
 }
 

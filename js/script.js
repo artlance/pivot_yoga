@@ -114,7 +114,7 @@ $(document).ready(function() {
 
     //slider
     $('.reviews-slider').slick({
-        dots: false,
+        dots: true,
         arrows: false,
         draggable: true,
         infinite: true,
@@ -436,7 +436,7 @@ $(window).load(function() {
         offset: "100%"
     });
 
-    $('.teachers-title h2, .teachers-slider, .teachers-navigation, .reviews-slider, .get-started-content, .js-cm-form, .product-teachers-content *, .video-toggle-title, .video-toggle-play, .product-design-title, .product-design-description, .product-design-more, .product-faq-title, .faq-navigation, .faq, .product-tech-group, .product-tech-title, .teacher, .teacher-info-content, .hero-inner, .info-inner-content, .teachers-cta-content, .breadcrumbs, .how-testimonial-img, .how-testimonial-block, .teacher-testimonial-title, .teacher-testimonial-link, .teacher-course, .teacher-courses-title, .map-col, .contact-title, .contact-note, .feedback').waypoint(function(direction) {
+    $('.teachers-title h2, .teachers-slider, .teachers-navigation, .reviews-slider, .get-started-content, .js-cm-form, .product-teachers-content *, .video-toggle-title, .video-toggle-play, .product-design-title, .product-design-description, .product-design-more, .product-faq-title, .faq-navigation, .faq, .product-tech-group, .product-tech-title, .teacher, .teacher-info-content, .hero-inner, .info-inner-content, .teachers-cta-content, .breadcrumbs, .how-testimonial-img, .how-testimonial-block, .teacher-testimonial-title, .teacher-testimonial-link, .teacher-course, .teacher-courses-title, .map-col, .contact-title, .contact-note, .feedback, .media-information-download, .media-information-list, .media-information-title, .news-item, .news-title').waypoint(function(direction) {
         $(this.element).addClass('animated1 fadeInUp').addClass('visibility-visible');
     }, {
         offset: "85%"
