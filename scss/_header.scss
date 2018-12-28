@@ -173,3 +173,60 @@ a.logo {
         }
     }
 }
+.message-global {
+    background: $p;
+    color: $w;
+    text-align: center;
+    font-family: $ft;
+    font-weight: 600;
+    line-height: 1;
+    padding: 21px 0;
+}
+.countdown-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.countdown-title {
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    padding-right: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.countdown {
+    display: flex;
+    .num,
+    .word {
+        font-size: 30px;
+        display: block;
+    }
+    .num {
+        position: relative;
+        &:before {
+            content: ":";
+            position: absolute;
+            top: -1px;
+            left: -2px;
+        }
+    }
+    .day {
+        .num {
+            &:before {
+                display: none;
+            }
+        }
+    }
+    .word {
+        padding-top: 3px;
+        letter-spacing: -0.5px;
+        font-size: 10px;
+        opacity: 0.9;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+}
+.countdown-item {
+    min-width: 66px;
+}

@@ -2780,6 +2780,7 @@ a.underline {
   min-height: 100%;
   overflow: hidden;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 .container {
@@ -4387,6 +4388,83 @@ a.logo:hover {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.message-global {
+  background: #20C2DA;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", Times, Georgia, serif;
+  font-weight: 600;
+  line-height: 1;
+  padding: 21px 0;
+}
+
+.countdown-columns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.countdown-title {
+  font-size: 20px;
+  letter-spacing: 0.3px;
+  padding-right: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.countdown {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.countdown .num,
+.countdown .word {
+  font-size: 30px;
+  display: block;
+}
+
+.countdown .num {
+  position: relative;
+}
+
+.countdown .num:before {
+  content: ":";
+  position: absolute;
+  top: -1px;
+  left: -2px;
+}
+
+.countdown .day .num:before {
+  display: none;
+}
+
+.countdown .word {
+  padding-top: 3px;
+  letter-spacing: -0.5px;
+  font-size: 10px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.countdown-item {
+  min-width: 66px;
 }
 
 /* footer */
